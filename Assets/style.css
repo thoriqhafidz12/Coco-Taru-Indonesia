@@ -5,6 +5,10 @@
 body{
     background: f1fbff;
 }
+.card{
+	border:none;
+	align-items: center;
+}
 .section-padding{
     padding: 100px 0;
 }
