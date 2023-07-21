@@ -3,7 +3,7 @@
 	font-family: 'Montserrat', sans-serif;
 }
 body{
-    background: f1fbff;
+    background: white;
 }
 .card{
 	border:none;
@@ -58,6 +58,14 @@ li.list-group-item{
 img.card-img-top{
     width: 250px;
     height: 250px;
+}
+
+img.d-block{
+    filter:grayscale(60%);
+}
+
+h5.car-h5{
+    background-color: hsla(0, 0%, 0%, 0.418);
 }
 
 .btn{
