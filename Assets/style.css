@@ -65,6 +65,14 @@ img.card-img-top{
     align-content: center;
 }
 
+.profile{
+    margin-top: 40px;
+}
+
+.about-us{
+    font-size: 40px;
+}
+
 /* responsive CSS */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.card {
