@@ -3,7 +3,7 @@
 	font-family: 'Montserrat', sans-serif;
 }
 body{
-    background: white;
+    background: #586D34;
 }
 .card{
 	border:none;
@@ -31,6 +31,9 @@ body{
     font-weight: 700;
     letter-spacing: 2px;
 }
+strong.str1{
+    color: #A16500;
+}
 
 .navbar-light:focus{
     color: #000;
@@ -44,6 +47,9 @@ body{
 .navbar-brand:hover{
     color:#000;
 }
+.nav-link{
+    color: #A16500;
+}
 
 .navbar-light .navbar-nav .navbar-link{
 color: #000;
@@ -53,6 +59,7 @@ height: 100%;
 }
 li.list-group-item{
     border: none;
+    background-color: #586D34;
 }
 
 img.card-img-top{
@@ -63,9 +70,15 @@ img.card-img-top{
 img.d-block{
     filter:grayscale(60%);
 }
+img.img-nav{
+    border-radius: 50%;
+}
 
 h5.car-h5{
     background-color: hsla(0, 0%, 0%, 0.418);
+}
+h3{
+    color: #BE9250;
 }
 
 .btn{
@@ -79,6 +92,13 @@ h5.car-h5{
 
 .about-us{
     font-size: 40px;
+}
+footer{
+    background-color: white;
+    color: #A16500;
+}
+hr{
+    color: white;
 }
 
 /* responsive CSS */
