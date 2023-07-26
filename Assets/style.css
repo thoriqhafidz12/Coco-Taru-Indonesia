@@ -5,123 +5,94 @@
 body{
     background:white;
 }
-.card{
-	border:none;
-	align-items: center;
-}
-.section-padding{
-    padding: 100px 0;
-}
-.navbar-nav a{
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-.navbar-brand{
-    color: #000;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-.navbar-Light{
-    color: #000;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-strong.str1{
-    color: #A16500;
-}
 
-.navbar-light:focus{
-    color: #000;
-}
-.navbar-brand:focus{
-    color:#000;
-}
-.navbar-light:hover{
-    color: #000;
-}
-.navbar-brand:hover{
-    color:#000;
-}
-.nav-link{
-    color: #A16500;
-}
+  /* Gaya untuk tombol "About US" */
+  .about-us-link {
+    color: black; /* Warna teks menjadi hitam */
+    text-decoration: none; /* Menghapus garis bawah default */
+    transition: color 0.3s; /* Efek transisi ketika warna teks berubah */
+    border-bottom: 2px solid transparent; /* Tambahkan garis bawah dengan ketebalan 2px (transparent untuk saat normal) */
+  }
 
-.navbar-light .navbar-nav .navbar-link{
-color: #000;
-}
-.w-100{
-height: 100%;
-}
-li.list-group-item{
-    border: none;
-    background-color: transparent;
-}
+  /* Gaya saat tombol dihover */
+  .about-us-link:hover {
+    color: #D6A676; /* Ubah warna teks menjadi oranye saat tombol dihover */
+    border-bottom-color: #D6A676; /* Ubah warna garis bawah menjadi oranye saat tombol dihover */
+    padding-bottom: 5px; /* Tambahkan jarak 5px antara teks dan garis bawah */
+  }
 
-img.card-img-top{
-    width: 250px;
-    height: 250px;
-}
+  .nav-on{
+    color: #D6A676; /* Ubah warna teks menjadi oranye saat tombol dihover */
+    border-bottom-color: #D6A676; /* Ubah warna garis bawah menjadi oranye saat tombol dihover */
+    padding-bottom: 5px;
+  }
 
-img.d-block{
-    filter:grayscale(60%);
-}
-img.img-nav{
-    border-radius: 50%;
-}
+  .bg-green{
+    background-color: #586d34;
+  }
 
-h5.car-h5{
-    background-color: hsla(0, 0%, 0%, 0.418);
-}
-h3{
-    color: #BE9250;
-}
-
-.btn{
-    align-items: center;
-    align-content: center;
-}
-
-.profile{
-    margin-top: 40px;
-}
-
-.about-us{
-    font-size: 40px;
-}
-footer{
-    background-color: white;
-    color: #A16500;
-}
-hr{
-    color: #A16500;
-}
-
-.content-text{
-    color: black;
-}
-.content-text-vimis{
+  .content-text{
     color: white;
-}
+    font-size: small;
+  }
 
-header{
-    background-image: url("https://images.unsplash.com/photo-1546662608-aec5228e9a74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
+  .custom-hr {
+    border: none;
+    background-color: #D6A676;
+    height: 2px;
+    width: 100px; /* Sesuaikan lebar garis bawah dengan panjang tulisan "With" */
+    margin: 0 auto; /* Agar garis bawah berada di tengah */
+  }
 
-.container-vimis{
-    padding: 100px;
-    background-image: url("https://images.unsplash.com/photo-1546662608-aec5228e9a74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
+  .card {
+    max-width: 18rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Gaya untuk card gambar - mengatur posisi tengah secara horizontal dan vertikal */
+  .card-img-container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  /* Gaya untuk teks pada kolom kanan */
+  .col-md-6 {
+    text-align: left;
+  }
+
+  /* Gaya untuk judul "Get Closer with Us" */
+  h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Gaya untuk HR (garis bawah) */
+  hr {
+    border-style: solid;
+  }
+
+  /* Gaya untuk paragraf */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Gaya untuk judul "More About Us" dan "Check Our Products" */
+  h5:last-child {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  @media (max-width: 767px) {
+    /* Gaya khusus untuk tampilan di ukuran layar < 768px (tablet dan di bawahnya) */
+    .col-md-6 {
+      text-align: center;
+    }
+  }
+
 
 /* responsive CSS */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
