@@ -54,7 +54,6 @@ body{
   .card-img-container {
     justify-content: center;
     align-items: center;
-    height: 100%;
   }
 
   /* Gaya untuk teks pada kolom kanan */
@@ -92,6 +91,19 @@ body{
       text-align: center;
     }
   }
+
+  .bg-putih{
+    background-color: #D9D9D9;
+  }
+
+  .color-text{
+    color: #A16500;
+  }
+
+.btn-products{
+  background-color: #A16500;
+  color: white;
+}
 
 
 /* responsive CSS */
