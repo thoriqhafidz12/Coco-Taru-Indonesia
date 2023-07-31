@@ -43,6 +43,13 @@ body{
     width: 100px; /* Sesuaikan lebar garis bawah dengan panjang tulisan "With" */
     margin: 0 auto; /* Agar garis bawah berada di tengah */
   }
+  .custom-hr2 {
+    border: none;
+    background-color: #A16500;
+    height: 2px;
+    width: 100px; /* Sesuaikan lebar garis bawah dengan panjang tulisan "With" */
+    margin: 0 auto; /* Agar garis bawah berada di tengah */
+  }
 
   .card {
     max-width: 18rem;
@@ -61,11 +68,28 @@ body{
     text-align: left;
   }
 
+  .conwel{
+    padding-top: 250px;
+    padding-bottom: 250px;
+    color: white;
+    background-image: url("/Assets/head.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
   /* Gaya untuk judul "Get Closer with Us" */
   h5 {
     font-size: 1.5rem;
     font-weight: bold;
   }
+
+ input.placeholder{
+  color:#A16500 ;
+ }
+ input{
+  color: #A16500;
+ }
 
   /* Gaya untuk HR (garis bawah) */
   hr {
@@ -102,6 +126,10 @@ body{
 
 .btn-products{
   background-color: #A16500;
+  color: white;
+}
+.btn-more{
+  background-color: #D6A676;
   color: white;
 }
 
