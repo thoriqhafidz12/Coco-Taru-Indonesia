@@ -91,6 +91,18 @@ body{
   color: #A16500;
  }
 
+ .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #D0B280;
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #D0B280;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: #D0B280;
+}
+
   /* Gaya untuk HR (garis bawah) */
   hr {
     border-style: solid;
