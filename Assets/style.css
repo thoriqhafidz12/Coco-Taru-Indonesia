@@ -72,6 +72,7 @@ body{
   .conwel{
     padding-top: 250px;
     padding-bottom: 250px;
+    background-image: url("Assets/head.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
