@@ -1,0 +1,353 @@
+/* ============================================
+   COCOTARU INDONESIA - Animation Styles
+   ============================================ */
+
+/* --------------------------------------------
+   1. KEN BURNS EFFECT - Hero Background
+   -------------------------------------------- */
+.conwel {
+  animation: kenBurns 20s ease-in-out infinite alternate;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes kenBurns {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 110%;
+  }
+}
+
+/* --------------------------------------------
+   2. PULSE ANIMATION - CTA Buttons
+   -------------------------------------------- */
+.pulse-btn {
+  animation: pulse 2s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.pulse-btn:hover {
+  animation: none;
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(166, 101, 0, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 18px rgba(166, 101, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(166, 101, 0, 0);
+  }
+}
+
+/* --------------------------------------------
+   3. PRODUCT CARDS - Hover Effects
+   -------------------------------------------- */
+.product-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 16px;
+}
+
+.product-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+.product-card .btn-products {
+  transition: all 0.3s ease;
+}
+
+.product-card:hover .btn-products {
+  background-color: #D6A676;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(166, 101, 0, 0.4);
+}
+
+/* --------------------------------------------
+   4. VALUE CARDS - Float + Hover
+   -------------------------------------------- */
+.value-card {
+  transition: transform 0.4s ease;
+  border-radius: 16px;
+  padding: 20px 10px;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+}
+
+.value-icon {
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+.value-card:hover .value-icon {
+  animation: floatIconFast 0.6s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes floatIconFast {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* --------------------------------------------
+   5. GALLERY IMAGES - Hover Scale
+   -------------------------------------------- */
+.gallery-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
+  margin: 6px;
+}
+
+.gallery-img:hover {
+  transform: scale(1.12);
+  box-shadow: 0 12px 30px rgba(88, 109, 52, 0.35);
+  border-color: #D6A676 !important;
+  z-index: 2;
+  position: relative;
+}
+
+/* --------------------------------------------
+   6. NAVBAR - Scroll Shrink Effect
+   -------------------------------------------- */
+.navbar {
+  transition: all 0.4s ease;
+  padding: 12px 0;
+}
+
+.navbar.scrolled {
+  padding: 4px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 255, 255, 0.97) !important;
+  backdrop-filter: blur(10px);
+}
+
+.navbar .img-nav {
+  transition: all 0.4s ease;
+}
+
+.navbar.scrolled .img-nav {
+  width: 150px;
+}
+
+/* --------------------------------------------
+   7. SMOOTH SCROLL - Whole Page
+   -------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --------------------------------------------
+   8. SOCIAL MEDIA ICONS - Hover Bounce
+   -------------------------------------------- */
+footer .col-auto img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+footer .col-auto:hover img {
+  transform: translateY(-6px) scale(1.15);
+  filter: brightness(1.3);
+}
+
+/* --------------------------------------------
+   9. BUTTON HOVER - General Slide Effect
+   -------------------------------------------- */
+.btn-more,
+.btn-products {
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-more:hover,
+.btn-products:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Ripple-like shine on hover */
+.btn-more::after,
+.btn-products::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s ease;
+  transform: translate(-50%, -50%);
+}
+
+.btn-more:hover::after,
+.btn-products:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* --------------------------------------------
+   10. FORM INPUT FOCUS - Animated Border
+   -------------------------------------------- */
+.form-control {
+  transition: all 0.35s ease;
+  border-width: 2px;
+}
+
+.form-control:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(166, 101, 0, 0.15);
+  border-color: #D6A676 !important;
+}
+
+/* --------------------------------------------
+   11. FADE IN UP - for section titles
+   -------------------------------------------- */
+.section-title {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------------------------
+   12. LINE GROW - hr animation on section in-view
+   -------------------------------------------- */
+.custom-hr,
+.custom-hr2 {
+  animation: lineGrow 1s ease forwards;
+  transform-origin: center;
+}
+
+@keyframes lineGrow {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100px;
+    opacity: 1;
+  }
+}
+
+/* --------------------------------------------
+   13. LOGO SPIN - Subtle on load
+   -------------------------------------------- */
+.img-nav {
+  animation: logoReveal 1s ease forwards;
+}
+
+@keyframes logoReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* --------------------------------------------
+   14. CARD IMAGE ZOOM on section hover (Values)
+   -------------------------------------------- */
+.bg-green .card img {
+  transition: transform 0.5s ease;
+}
+
+.bg-green .card:hover img {
+  transform: scale(1.08);
+}
+
+/* --------------------------------------------
+   15. MODAL - Slide in from bottom
+   -------------------------------------------- */
+.modal.fade .modal-dialog {
+  transition: transform 0.4s ease-out;
+  transform: translateY(60px);
+}
+
+.modal.show .modal-dialog {
+  transform: translateY(0);
+}
+
+/* --------------------------------------------
+   16. NAV LINK - Underline slide
+   -------------------------------------------- */
+.about-us-link {
+  position: relative;
+}
+
+.about-us-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #D6A676;
+  transition: all 0.35s ease;
+  transform: translateX(-50%);
+}
+
+.about-us-link:hover::after {
+  width: 100%;
+}
+
+/* Remove old border-bottom approach, keep for compatibility */
+.about-us-link:hover {
+  border-bottom-color: transparent;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 767px) {
+  @keyframes kenBurns {
+    0% {
+      background-size: 120%;
+    }
+    100% {
+      background-size: 135%;
+    }
+  }
+
+  .product-card:hover {
+    transform: translateY(-6px);
+  }
+}
